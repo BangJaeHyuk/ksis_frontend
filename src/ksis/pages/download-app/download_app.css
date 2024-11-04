@@ -1,0 +1,87 @@
+/* 전체 페이지 배경 스타일 */
+.app-download-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffd580 0%, #fff4e0 100%);
+  background-size: cover;
+}
+
+/* 콘텐츠 섹션 스타일 */
+.content-container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 텍스트 및 버튼 섹션 */
+.text-section {
+  flex: 1.3;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.download-button,
+.open-app-button {
+  display: block;
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(60deg, #ff9c00, #ffa71d);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.download-button:hover,
+.open-app-button:hover {
+  background: linear-gradient(60deg, #ffa71d, #fbb310);
+}
+
+/* 이미지 섹션 */
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-preview {
+  width: 100%;
+  max-width: 330px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text-section {
+    padding-right: 0;
+  }
+  .image-section {
+    margin-top: 20px;
+  }
+}

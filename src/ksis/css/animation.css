@@ -1,0 +1,14 @@
+.notice-text {
+  display: inline-block;
+  white-space: nowrap;
+  /* animation: flow 15s linear infinite; */
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-51%);
+  }
+}
